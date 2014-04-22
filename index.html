@@ -17,7 +17,6 @@
 	<link rel="stylesheet" href="stylesheets/base.css">
 	<link rel="stylesheet" href="stylesheets/skeleton.css">
 	<link rel="stylesheet" href="stylesheets/layout.css">
-	<link rel="stylesheet" href="stylesheets/menu.css">
 	
 	<!-- Favicons
 	================================================== -->
@@ -25,8 +24,6 @@
 	
 	<!-- Scripts
 	================================================== -->
-	<script src="http://yui.yahooapis.com/3.16.0/build/yui/yui-min.js"></script>
-	<script src="scripts/menu.js"></script>
 
 </head>
 <body>
@@ -43,44 +40,44 @@
 			<img src="images/ensiie.png">
 		</div>
 	
-		<div id="demo-horizontal-menu" class="thirteen columns">
-			<ul id="menu">
-				<li class="pure-menu-selected"><a href="#">Home</a></li>
-				<li><a href="#">Pour commencer</a>
+		
+			<ul class="nav">
+				<li><a href="#">Home</a></li>
+				<li class="dropdown"><a href="#">Pour commencer</a>
 					<ul>
 						<li><a href="#">Pourquoi partir ?</a></li>
 						<li><a href="#">Quand partir ?</a></li>
 					</ul>
 				</li>
-				<li><a href="#">Les démarches</a>
+				<li class="dropdown"><a href="#">Les démarches</a>
 					<ul>
-						<li><a href="#">Auprès de l'ENSIIE</a></li>
+						<li><a href="#">À l'ENSIIE</a></li>
 						<li><a href="#">À l'étranger</a></li>
 					</ul>
-				</li>
-				<li><a href="#">Partir au S4</a>
+				</li class="dropdown">
+				<li class="dropdown"><a href="#">Partir au S4</a>
 					<ul>
-						<li><a href="#">Allemagne</a>
+						<li class="dropdown"><a href="#">Allemagne</a>
 							<ul>
 									<li><a href="#">Munich</a></li>
 							</ul>
 						</li>
-						<li><a href="#">Italie</a>
+						<li class="dropdown"><a href="#">Italie</a>
 							<ul>
 									<li><a href="#">Bologne</a></li>
 							</ul>
 						</li>
 					</ul>
 				</li>
-				<li><a href="#">Partir au S5</a>
+				<li class="dropdown"><a href="#">Partir au S5</a>
 					<ul>
-						<li><a href="#">Allemagne</a>
+						<li class="dropdown"><a href="#">Allemagne</a>
 							<ul>
 									<li><a href="#">Karlsruhe</a></li>
 							</ul>
 						</li>
 						<li><a href="#">Espagne</a></li>
-						<li><a href="#">Royaume-Uni</a>
+						<li class="dropdown"><a href="#">Royaume-Uni</a>
 							<ul>
 									<li><a href="#">Aston</a></li>
 									<li><a href="#">Cranfield</a></li>
@@ -92,7 +89,6 @@
 					</ul>
 				</li>
 			</ul>
-		</div>
 
 		
 		<div id="headerImage" class="sixteen columns">
