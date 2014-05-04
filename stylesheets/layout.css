@@ -200,6 +200,7 @@ border-top: 1px solid #000;
 /* Infobox template style */
 .infobox {
     border: 1px solid #aaa;
+	border-spacing: 3px;
     background-color: #f7f7f7;
     color: black;
     /* @noflip */
@@ -212,7 +213,7 @@ border-top: 1px solid #000;
     /* @noflip */
     text-align: left;
     font-size: 88%;
-    line-height: 2em;
+    line-height: 2.1em;
 }
 .infobox .header {
     font-size: 125%;
