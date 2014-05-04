@@ -18,7 +18,23 @@
 ================================================== */
 
 .container {
+	position:float;
     margin-top: 20px;
+}
+
+
+#headerImage img {
+	display: block;
+    margin-bottom: 50px;
+    max-width: 100%;
+	width:960px;
+    height: auto;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.nav>li>.current {
+	border-bottom-color:#000;
 }
 
 /* General menu styling */
@@ -26,6 +42,7 @@
 position: relative;
 margin: 0;
 padding: 0;
+padding-top: 15px;
 line-height: 22px;
 }
 /* The main navigation link containers */
@@ -48,6 +65,7 @@ font-size: 18px;
 text-decoration: none;
 /* Background */
 background: rgba(255, 255, 255, .95); /* Transparent background for modern browsers */
+border-bottom:3px #FFF solid;
 /* Making the color to change on hover with a transition */
 -webkit-transition: color .3s ease-in;
 -moz-transition: color .3s ease-in;
@@ -55,9 +73,9 @@ background: rgba(255, 255, 255, .95); /* Transparent background for modern brows
 -ms-transition: color .3s ease-in;
 }
 /* Changing the color on hover */
-.nav>li>a:hover, .nav>li:hover>a {
+.nav>li>a:hover, .nav>li:hover>a  {
 color: #000;
-border-bottom:3px #000 solid;
+border-bottom-color:#000;
 }
 /* The links which contain dropdowns menu are wider, because they have a little arrow */
 .nav>.dropdown>a {
@@ -106,14 +124,14 @@ padding: 0;
 }
 /* Displays the submenu links, by expading their containers (with a transition, previously defined) and by repositioning them */
 .dropdown:hover>ul>li {
-height: 26px;
+height: 40px;
 position: relative;
 top: auto;
 }
 /* The submenu links */
 .nav ul li a {
 /* Layout */
-padding: 4px 20px;
+padding: 11px 20px;
 width: 130px;
 display: block;
 position: relative;
@@ -123,7 +141,7 @@ color: #777;
 text-decoration: none;
 font-size: 17px;
 /* Background & effects */
-background: rgba(255, 255, 255, .85);
+background: rgba(250, 250, 250, .90);
 -webkit-transition: color .3s ease-in, background .3s ease-in;
 -moz-transition: color .3s ease-in, background .3s ease-in;
 -o-transition: color .3s ease-in, background .3s ease-in;
@@ -156,19 +174,75 @@ border-right: 1px solid #000;
 border-top: 1px solid #000;
 }
 
+/* University name and title */
+.uniname {
+	text-align:center;
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	}
+
+/* Left column */
+.left {
+	float:left;
+	width:70%;
+	}
+	
+/* Right column */
+.right {
+	float:right;
+	width:30%;
+	}
+	
+/* Separation between element in the left column */
+.sep {
+	margin-bottom:15px;
+	}
+
+/* Infobox template style */
+.infobox {
+    border: 1px solid #aaa;
+    background-color: #f7f7f7;
+    color: black;
+    /* @noflip */
+    margin: 0 0 0.5em 1em;
+    padding: 0.2em;
+    /* @noflip */
+    float: right;
+    /* @noflip */
+    clear: both;
+    /* @noflip */
+    text-align: left;
+    font-size: 88%;
+    line-height: 2em;
+}
+.infobox .header {
+    font-size: 125%;
+    font-weight: bold;
+}
+
+.infobox .logo {
+	text-align:center;
+}
+
+.infobox .devise {
+    font-style: italic;
+	text-align:center;
+}
+
+.infobox td{
+    vertical-align: top;
+	padding-left:4px;
+}
+
+.infobox th {
+	font-weight: bold;
+    vertical-align: top;
+	padding-left:4px;
+}
+
 /* #Page Styles
 ================================================== */
 
 /* Page accueil */
-#headerImage img {
-	display: block;
-    margin-bottom: 50px;
-    max-width: 100%;
-    height: auto;
-	margin-left: auto;
-    margin-right: auto;
-}
-
 #welcome {
     margin-bottom: 20px;
 }
