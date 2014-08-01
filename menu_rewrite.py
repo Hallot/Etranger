@@ -67,7 +67,11 @@ def content_for_current_menu(filepath, menucontent):
         index = index_containing_substring(menucontent, 'Home</a></li>')
         # Add the class identifier at this index
         menucontent[index] = '			<li><a class="current" href="index">Home</a></li>\n'
-        return menucontent
+        # Replace every instance of ../ at the start of relative url by ./
+        newcontent =[]
+        for i in menucontent:
+            newcontent.append(i.replace('../', './'))
+        return newcontent
 
 # Open a file, remove the content between the two markers, and replace it by the content of menu.html
 def replace_in_file(filename, newcontent):
