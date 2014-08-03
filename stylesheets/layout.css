@@ -184,19 +184,21 @@
   width:30%;
 }
 
-/* Separation between element in the left column */
+/* Separation between the picture and the text in the left column */
 .sep {
   margin-bottom:15px;
+  text-align:center;
 }
 
 /* Infobox template style */
+/* Adapted from Wikipedia */
 .infobox {
   border: 1px solid #aaa;
   border-spacing: 3px;
   background-color: #f7f7f7;
   color: black;
   /* @noflip */
-  margin: 0 0 0.5em 1em;
+  margin: 0 1em 0.5em 1em;
   padding: 0.2em;
   /* @noflip */
   float: right;
@@ -214,6 +216,7 @@
 
 .infobox .logo {
   text-align:center;
+  width:220px;
 }
 
 .infobox .devise {
