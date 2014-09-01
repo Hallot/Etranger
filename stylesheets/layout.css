@@ -235,6 +235,11 @@
   padding-left:4px;
 }
 
+/* Quote styling */
+blockquote p{
+    color: #777;
+    font-weight: 300;
+}
 /* #Page Styles
 ==*================================================ */
 
